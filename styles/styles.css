@@ -1,0 +1,216 @@
+/* Importo la tipografía montserrat y elementos globales */
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/* Logo */
+.logo-header{
+    padding: 3%;
+    width: 192px; 
+    height: 100px;  
+    }
+
+/* Link del otro html */
+.historia-texto{
+    text-align: center;
+    margin: 1rem;
+    }
+
+.link-historia{
+    text-decoration: none ;
+    color: rgb(0, 0, 0);
+    }
+
+/* Ajustamos los h2 para cada producto */
+h2{
+    text-decoration: underline;
+    padding: 1rem;
+    text-align: center;
+    }
+
+/* Editamos el texto del producto */
+.texto-producto{   
+    text-align: center;
+    padding: 1rem;
+    }
+
+/* Centrar y aplicar estilos al boton */
+.boton{
+    text-align: center;
+    }
+
+button{
+    background-color: rgb(0, 0, 0);
+    }
+
+.link-boton{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    }
+
+.redes{
+    text-align: center;
+    padding: 1rem;
+    }
+
+/* Footer*/
+.footer{
+    text-align: center;
+    padding: 1rem;
+    font-size: small;
+    }
+
+/* Cree un contenedor para poder centrar las imagenes en tablet y desktop */
+.carrusel{
+    display: flex;
+    justify-content: center;
+    }
+    
+/* Mobile first --------------------------------------------------------------------*/
+@media only screen and (max-width: 320px) {
+
+    /* Configuro como se ven las imagenes dentro del carrusel */
+    .img-producto{
+        border: 5px solid rgb(0, 0, 0);
+        height: 20rem;
+        width: 18.8rem;
+    }
+
+    /* No quiero que aparezca el h1 ni la grilla */
+    h1{
+        display: none;
+    }
+
+    #grilla{
+        display: none;
+    }
+
+    .logos-redes{
+        width: 30px;
+        height: 30px;
+    }
+
+    /* No quiero mostrar la carta en mobile */
+    .carta{
+        visibility: hidden;
+    }
+}
+
+
+ /* Tablet -------------------------------------------------------------- */
+@media only screen and (min-width: 321px) and (max-width: 600px){
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    /* No quiero que se vea la grilla */
+    #grilla{
+        display: none;
+    }
+
+    /* Configuro como se ven las imagenes dentro del carrusel */
+    .img-producto{
+        border: 5px solid rgb(0, 0, 0);
+        height: 31rem;
+        width: 30rem;
+    }
+
+    .logos-redes{
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Centramos la carta de bootstrap */
+    .carta{
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+    .card{
+        text-align: center;
+    }
+}
+
+/* Desktop --------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 601px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+  
+    /* Configuro como se ven las imagenes dentro del carrusel */
+    .img-producto{
+        border: 5px solid rgb(0, 0, 0);
+        height: 32rem;
+        width: 40rem;
+    }
+
+    /* Corrijo el ancho del texto descriptivo y lo acomodo al centro */
+    .contenedor-texto{
+        display: flex;
+        justify-content: center;
+    }
+
+    .texto-producto{
+        max-width: 40rem;
+    }
+
+    .logos-redes{
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Grid de historia */
+    #grilla{
+        margin-top: 5%;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 2fr 2fr;
+        column-gap: 5px;
+        row-gap: 5px;
+
+        /* uso el grid-template-area */
+        grid-template-areas: 
+        'card video video'
+        'card img img';
+    }
+
+    /* Asigno valores */
+    .carta{
+        padding-left: 1rem;
+        grid-area: card;
+    }
+
+    /* Luché todo lo que pude pero no me salió alargar la carta hasta el borden de la imagen 
+    si me tiran un protip lo agradecería :)*/
+
+    .video{
+        grid-area: video;
+    }
+
+    .video-madera{
+        width: 100%;
+        padding-right: 1rem ;
+    }
+
+    .imagen-artistica{
+        height: 20rem;
+        grid-area: img;
+    }
+
+    .imagen-madera{
+        padding-right: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+}

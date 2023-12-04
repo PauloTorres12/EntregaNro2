@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Importo bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Importo la tipografía montserrat -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,300&family=Roboto&display=swap');
+    </style>
+
+    <!-- Título de la página  -->
+    <title>Productos | .CREATE</title>
+</head>
+<body>
+    <header>
+        <!-- Logo de .create -->
+        <a class="link-header" href="index.html"><img class="logo-header" src="media/logo.png" alt="Logo"></a>
+        <h1>PRODUCTOS</h1>
+    </header>
+
+    <main>
+        <!-- Link para el html de la historia-->
+        <div class="contenedor-link">
+            <p class="historia-texto"><a class="link-historia" href="pages/historia.html">- HISTORIA -</a></p>
+        </div>
+
+        <!-- Primer Producto -->
+        <h2>Estantería de Madera</h2>
+        <div class="carrusel">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://i.pinimg.com/236x/2e/e5/7d/2ee57d3ec094aedd724bb0818ce3410f.jpg" class="d-flex img-producto" alt="imagen-decoracion">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://i.pinimg.com/originals/04/7e/97/047e97f56e9e048e80de78e7cde868b8.jpg" class="d-flex img-producto" alt="imagen-decoracion">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://cdn-fastly.hometalk.com/media/2020/07/09/6251705/s-10-beautiful-things-you-can-make-using-scrap-pieces-of-wood.jpg?size=720x845&nocrop=1" class="d-flex img-producto" alt="imagen-decoracion">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+
+        <!-- Párrafo con especificaciones del producto -->
+        <div class="contenedor-texto">
+            <p class="texto-producto">
+                Descubre la elegancia natural con nuestra estantería de madera artesanal, 
+                diseñada para realzar cualquier espacio con su encanto rústico. 
+                Cada pieza está cuidadosamente elaborada con madera maciza, resaltando las vetas y 
+                texturas únicas. Sus estantes espaciosos ofrecen un lugar perfecto para exhibir libros, 
+                plantas o decoraciones, añadiendo un toque cálido y acogedor a tu hogar. La combinación 
+                de funcionalidad y belleza convierte a esta estantería en una pieza esencial para aquellos 
+                que buscan una decoración auténtica y atemporal.
+            </p>
+        </div>
+
+        <!-- Boton de compra -->
+        <div class="boton">
+            <button><a class="link-boton" href="https://www.whatsapp.com/?lang=es_LA" target="_blank">COMPRAR</a></button>
+        </div>
+
+        <!-- Segundo Producto -->
+        <h2>Mesa de Madera</h2>
+        <div class="carrusel">
+            <div id="carouselExample1" class="carousel slide ">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://acdn.mitiendanube.com/stores/001/045/108/products/dsc_09411-180f80a736dc45acfc15951619201021-640-0.jpg" class="d-flex img-producto" alt="Mesa-Madera">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://acdn.mitiendanube.com/stores/001/045/108/products/dsc_09421-a1e21c5435f4e2bf0e15951619206035-1024-1024.jpg" class="d-flex img-producto" alt="Mesa-Madera">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://nowuhogar.com/cdn/shop/products/NHMCD140-3_1200x.jpg?v=1612299851" class="d-flex img-producto" alt="Mesa-Madera">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <!-- Quiero dejar este comentario acá porque se que un futuro me va a volver a pasar
+            y voy a recurrir a este documento para acordarme || TENES QUE CAMBIAR EL 
+            data-bs-target POR EL NOMBRE DE LA ID EN ESTE CASO carouselExample1 PORQUE SINO VAS A MOVER
+            LA IMAGEN DE OTRO CARRUSEL Y NO DE ESTE !!!!!!!!!!!!!-->
+        </div>
+
+        <!-- Párrafo con especificaciones del producto -->
+        <div class="contenedor-texto">
+            <p class="texto-producto">
+                Transforma tu espacio con nuestra excepcional mesa de madera, una obra maestra de 
+                artesanía y elegancia. Cada mesa está meticulosamente elaborada con madera maciza,
+                resaltando la belleza natural de las vetas y texturas. Su diseño versátil se integra 
+                perfectamente en cualquier estilo decorativo, proporcionando un punto focal funcional y 
+                atemporal para compartir momentos inolvidables. La durabilidad y el encanto rústico 
+                de esta mesa de madera la convierten en una adición imprescindible para tu hogar.
+            </p>
+        </div>
+
+        <!-- Boton de compra -->
+        <div class="boton">
+            <button><a class="link-boton" href="https://www.whatsapp.com/?lang=es_LA" target="_blank">COMPRAR</a></button>
+        </div>
+    </main> <!-- No pude solucionar que el segundo producto funcione el slide de bootstrap -->
+
+    <!-- Pie de página -->
+    <footer>
+        <p class="footer">Derechos de autor © 2023 .CREATE | Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Importo el script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
