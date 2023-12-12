@@ -22,6 +22,11 @@ header{
     margin: 1rem;
     }
 
+.contenedor-link{
+    display: flex;
+    justify-content: center;
+} 
+
 .link-historia{
     text-decoration: none ;
     color: rgb(0, 0, 0);
@@ -70,8 +75,45 @@ button{
 .carrusel{
     display: flex;
     justify-content: center;
+    max-width: 100%;
     }
+
+/* Titulos de las páginas extra */
+h3{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+/* Carta redes */
+.carta-redes{
+    display: flex;
+    justify-content: center;
+}
     
+ul{
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+}
+
+/* Texto de la informacion*/
+
+.texto-info{
+    text-align: center;
+    padding-left: 21rem;
+    padding-right: 21rem;
+}
+
+.mapa{
+    text-align: center;
+}
+
+/* Videos */
+.video{
+    text-align: center;
+}
+
 /* Mobile first --------------------------------------------------------------------*/
 @media only screen and (max-width: 320px) {
 
